@@ -1,0 +1,10 @@
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (1, 'Pasta Térmica', 10, 49.90, 38.70);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (2, 'Caddy Universal 9mm', 23, 25.90, 14.84);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (3, 'Cabo HDMI 3m', 3, 39.90, 25.36);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (4, 'Headset Hyperx Cloud', 6, 249.90, 203.20);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (5, 'Monitor Dell 15,6', 5, 899.90, 750.12);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (6, 'Cadeira Gamer Husky', 10, 659.50, 550.30);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (7, 'Processador AMD Ryzen 5', 13, 1540.00, 1050.30);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (8, 'Cooler Fan Noctua 60mm', 23, 99.00, 75.99);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (9, 'Webcam Logitech GO', 20, 129.90, 98.19);
+insert into produto (idproduto, descricao, quantidade, preco_venda, preco_custo) values (10, 'Impressora HP 1020', 2, 789.50, 670.29);

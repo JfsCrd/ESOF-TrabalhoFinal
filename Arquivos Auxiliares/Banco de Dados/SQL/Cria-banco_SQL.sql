@@ -21,8 +21,8 @@ CREATE TABLE IF NOT EXISTS `esof`.`Produto` (
   `idproduto` INT NOT NULL,
   `descricao` VARCHAR(45) NOT NULL,
   `quantidade` INT NOT NULL,
-  `preco_venda` FLOAT(3,2) NOT NULL,
-  `preco_custo` FLOAT(3,2) NOT NULL,
+  `preco_venda` DOUBLE NOT NULL,
+  `preco_custo` DOUBLE NOT NULL,
   PRIMARY KEY (`idproduto`))
 ENGINE = InnoDB;
 
@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS `esof`.`Produto_has_Venda` (
   `idproduto` INT NOT NULL,
   `idVenda` INT NOT NULL,
   `quantidade` INT NOT NULL,
-  `valor` FLOAT(4,2) NOT NULL,
-  INDEX `fk_Produto_has_Venda_Venda1_idx` (`idVenda` ASC)  ,
-  INDEX `fk_Produto_has_Venda_Produto_idx` (`idproduto` ASC)  ,
+  `valor` DOUBLE NOT NULL,
+  INDEX `fk_Produto_has_Venda_Venda1_idx` (`idVenda` ASC) ,
+  INDEX `fk_Produto_has_Venda_Produto_idx` (`idproduto` ASC) ,
   PRIMARY KEY (`idProduto_has_Venda`),
   CONSTRAINT `fk_Produto_has_Venda_Produto`
     FOREIGN KEY (`idproduto`)
@@ -80,9 +80,9 @@ CREATE TABLE IF NOT EXISTS `esof`.`Produto_has_Compra` (
   `idproduto` INT NOT NULL,
   `idCompra` INT NOT NULL,
   `quantidade` INT NOT NULL,
-  `valor` FLOAT(4,2) NOT NULL,
-  INDEX `fk_Produto_has_Compra_Compra1_idx` (`idCompra` ASC)  ,
-  INDEX `fk_Produto_has_Compra_Produto1_idx` (`idproduto` ASC)  ,
+  `valor` DOUBLE NOT NULL,
+  INDEX `fk_Produto_has_Compra_Compra1_idx` (`idCompra` ASC) ,
+  INDEX `fk_Produto_has_Compra_Produto1_idx` (`idproduto` ASC) ,
   PRIMARY KEY (`idProduto_has_Compra`),
   CONSTRAINT `fk_Produto_has_Compra_Produto1`
     FOREIGN KEY (`idproduto`)
