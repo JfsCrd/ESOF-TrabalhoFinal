@@ -2,13 +2,9 @@
 
 require_once ("ConectaBanco.php");
 
-    if($_SERVER['REQUEST_METHOD']==='POST'){
-        //verifica se os dados inseridos estão no formato correto
-        $idProduto = filter_input(INPUT_POST, "var_idproduto", FILTER_SANITIZE_NUMBER_INT);
-        $descricao = filter_input(INPUT_POST, "var_descricao", FILTER_SANITIZE_STRING);
-        $preco_custo = filter_input(INPUT_POST, "var_preco_custo", FILTER_SANITIZE_NUMBER_FLOAT);
-        $preco_venda = filter_input(INPUT_POST, "var_preco_venda", FILTER_SANITIZE_NUMBER_FLOAT);
-        $quantidade = filter_input(INPUT_POST, "var_quantidade", FILTER_SANITIZE_NUMBER_INT);
+    if($_SERVER['REQUEST_METHOD']==='POST'){   
+
+        
 
         if($action_form == "editar_produto"){
             //chama função de editar produto em Model/Produto.php

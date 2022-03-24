@@ -6,9 +6,11 @@ require_once ("ConectaBanco.php");
 
         include("ConectaBanco.php");
 
-        $query = "INSERT INTO produto (idProduto, descricao, quantidade, preco_venda, preco_custo) VALUES ($idProduto, '$descricao', $quantidade, $preco_venda, $preco_custo);";
+        $query = "INSERT INTO produto (idProduto, descricao, quantidade, preco_venda, preco_custo) VALUES ('$idProduto', '$descricao', '$quantidade', '$preco_venda', '$preco_custo');";
 
         $comando = mysqli_query($conecta, $query);
+
+        return $comando;
     }
 
     //deleta produto baseado no id coletado na interface gráfica

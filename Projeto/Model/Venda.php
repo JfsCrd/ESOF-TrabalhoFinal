@@ -6,7 +6,7 @@ require_once ("ConectaBanco.php");
 
     include ("ConectaBanco.php");
 
-    $query = "INSERT INTO venda (idVenda, data) VALUES ($idVenda, $data);";
+    $query = "INSERT INTO venda (idVenda, data) VALUES ('$idVenda', '$data');";
 
     $comando = mysqli_query($conecta, $query);
 
